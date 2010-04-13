@@ -152,7 +152,7 @@ class Clicky
   
   def result_array_from_xml_document(document, klass)
     results = []
-    document.elements.each('items/item') { |ele| results << klass.new(ele) }
+    document.elements.each('response/type/date/item') { |ele| results << klass.new(ele) }
     results
   end
 

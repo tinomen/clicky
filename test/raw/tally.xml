@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items>
+<response status="ok">
+<type type="actions">
+<date date="2010-04-12">
 <item><title><![CDATA[clicky]]></title><value><![CDATA[473]]></value><value_percent><![CDATA[44.1]]></value_percent><clicky_url><![CDATA[http://getclicky.com/stats/visitors?site_id=10&date=2007-12-27,2008-01-05&search=clicky]]></clicky_url></item>
 <item><title><![CDATA[getclicky]]></title><value><![CDATA[171]]></value><value_percent><![CDATA[16]]></value_percent><clicky_url><![CDATA[http://getclicky.com/stats/visitors?site_id=10&date=2007-12-27,2008-01-05&search=getclicky]]></clicky_url></item>
 <item><title><![CDATA[get clicky]]></title><value><![CDATA[88]]></value><value_percent><![CDATA[8.2]]></value_percent><clicky_url><![CDATA[http://getclicky.com/stats/visitors?site_id=10&date=2007-12-27,2008-01-05&search=get+clicky]]></clicky_url></item>
@@ -20,4 +22,6 @@
 <item><title><![CDATA[web 2.0 stats]]></title><value><![CDATA[3]]></value><value_percent><![CDATA[0.3]]></value_percent><clicky_url><![CDATA[http://getclicky.com/stats/visitors?site_id=10&date=2007-12-27,2008-01-05&search=web+2.0+stats]]></clicky_url></item>
 <item><title><![CDATA[clicky.com]]></title><value><![CDATA[3]]></value><value_percent><![CDATA[0.3]]></value_percent><clicky_url><![CDATA[http://getclicky.com/stats/visitors?site_id=10&date=2007-12-27,2008-01-05&search=clicky.com]]></clicky_url></item>
 <item><title><![CDATA[statcounter rss feeds xml blogger]]></title><value><![CDATA[3]]></value><value_percent><![CDATA[0.3]]></value_percent><clicky_url><![CDATA[http://getclicky.com/stats/visitors?site_id=10&date=2007-12-27,2008-01-05&search=statcounter+rss+feeds+xml+blogger]]></clicky_url></item>
-</items>
+</date>
+</type>
+</response>
