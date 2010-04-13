@@ -34,6 +34,7 @@ module Clicky::Actions
         'clicks'                => 'AJAX and Flash interactions',
         'countries'             => 'Visitors\' countries',
         'cities'                => 'Visitors\' cities',
+        'goals'                 => 'Goals'
         'languages'             => 'Languages',
         'web-browsers'          => 'Web browsers',
         'operating-systems'     => 'Operating systems',

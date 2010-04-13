@@ -50,7 +50,7 @@ class Clicky
   class ResponseError < RuntimeError; end
   
   # Base URL for the Clicky API service
-  BASE_URL = URI.parse("http://api.getclicky.com/stats/api2")
+  BASE_URL = URI.parse("http://api.getclicky.com/api/stats/4")
   
   @@config = { :app => 'clicky-ruby' }
   

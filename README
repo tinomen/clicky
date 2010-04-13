@@ -26,6 +26,8 @@ Or clone from:
   require 'clicky'
 
   Clicky.configure(:site_id => 1234, :sitekey => '12345678abcd')
+  
+  click = Clicky.new
 
   clicky.actions_list(:date => 'yesterday').each do |action|
     puts "#{action.title} => #{action.url}"
