@@ -41,4 +41,5 @@ http://getclicky.com/help/api for a complete list of available reports.
 == CHANGELOG:
 
   2008-06-11 - Initial commit to GitHub [0.5.0]
-  2010-04-14 - Changed code so that it works for the 4th version of the clicky api [0.5.1]
+  2010-04-13 - Changed code so that it works for the 4th version of the clicky api [0.5.1]
+  2010-04-14 - Added separate response class for goals [0.5.2]
