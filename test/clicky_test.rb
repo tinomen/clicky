@@ -60,6 +60,16 @@ class ClickyTest < Test::Unit::TestCase
     assert first.value_percent.is_a?(Float)
     assert first.value.is_a?(Fixnum)
   end
+  
+  def test_goals_result_is_parsed_correctly
+    results = result_from_fixture('goals', Clicky::GoalResponse)
+    first = results.first
+    
+    assert first.conversion.is_a?(Float)
+    assert first.cost.is_a?(Float)
+    assert first.revenue.is_a?(Float)
+    assert first.incompleted.is_a?(Fixnum)
+  end  
 
   # This doesn't work and is slightly over the top anyway.
   # def test_requests_are_relayed_via_http

@@ -94,6 +94,7 @@ class Clicky
       when 'visitors-list':                       VisitorResponse
       when 'actions-list':                        ActionResponse
       when /^(searches|links)-(recent|unique)$/:  ChronoResponse
+      when 'goals':                               GoalResponse 
       else                                        TallyResponse
     end
   end
@@ -181,8 +182,8 @@ class Clicky
       case name
         when 'time': Time.at(node.text.to_i)
         when 'javascript': node.text == '1'
-        when 'value', 'actions', 'time_total': node.text.to_i
-        when 'latitude', 'longitude', 'value_percent': node.text.to_f
+        when 'value', 'actions', 'time_total', 'incompleted': node.text.to_i
+        when 'latitude', 'longitude', 'value_percent', 'conversion', 'revenue', 'cost': node.text.to_f
         when 'custom': node.inject({}) { |m,n| m[n.name] = n.text; m }
         else node.text
       end
@@ -317,6 +318,24 @@ class Clicky
 
     # A link to view more details for this item on Clicky
     attr_reader :clicky_url
-
+    
   end
+  
+  class GoalResponse < TallyResponse
+    
+    # If this goal has a funnel, this value will be how many visitors went through the funnel but did not complete the goal
+    attr_reader :incompleted
+    
+    # The conversion rate percentage (how many people completed this goal, relative to either how many people total went through 
+    # this goals' funnel [if applicable], or the total number of visitors for the requested date/range). 
+    attr_reader :conversion
+    
+    # The total revenue for this goal
+    attr_reader :revenue
+    
+    # The total cost for this goal 
+    attr_reader :cost
+    
+  end
+  
 end
